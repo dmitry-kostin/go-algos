@@ -1,4 +1,4 @@
-package main
+package rateLimiter
 
 import (
 	"container/list"
