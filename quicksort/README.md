@@ -10,9 +10,9 @@ Quickselect is a selection algorithm to find the kth smallest element in an unor
 // FindKthLargest in array
 // problem can be interpreted as "find n - k smallest" and quickselect is a good way to go
 func FindKthLargest(nums []int, k int) int {
-	rand.Seed(time.Now().UnixNano())
-	n := len(nums)
-	return Select(nums, n-k)
+    rand.Seed(time.Now().UnixNano())
+    n := len(nums)
+    return quicksort.Select(nums, n-k)
 }
 ```
 
